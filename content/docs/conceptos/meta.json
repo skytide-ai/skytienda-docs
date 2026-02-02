@@ -1,5 +1,6 @@
 {
   "title": "Conceptos clave",
+  "icon": "BookOpen",
   "description": "Términos y conceptos fundamentales para usar Skytienda",
   "pages": ["index", "ventana-24h", "plantillas", "creditos", "catalogo-web", "celestino"]
 }

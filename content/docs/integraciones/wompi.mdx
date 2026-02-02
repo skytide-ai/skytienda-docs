@@ -1,0 +1,135 @@
+---
+title: Wompi
+description: Configura la pasarela de pagos Wompi para aceptar tarjetas, PSE, Nequi y más
+---
+
+Wompi es la pasarela de pagos que permite a tus clientes pagar con tarjeta de crédito, débito, PSE, Nequi y otros métodos de pago colombianos.
+
+<Callout type="info">
+  La integración de Wompi en SkyTienda tiene dos niveles:
+  1. **Links de Pago** → Para cobrar por WhatsApp (el asistente envía un enlace)
+  2. **Pasarela Web** → Para cobrar en el catálogo web (modal de pago integrado)
+
+  Cada nivel requiere credenciales diferentes. Puedes activar solo links de pago, o ambos.
+</Callout>
+
+## Obtener tus credenciales
+
+1. Ingresa a [login.wompi.co](https://login.wompi.co/)
+2. En el menú lateral izquierdo, ve a **Desarrollo → Programadores**
+3. Aquí encontrarás todas las llaves necesarias:
+
+| Credencial | Ejemplo | ¿Para qué sirve? |
+|------------|---------|------------------|
+| Llave pública | `pub_prod_AbCdEf123...` | Identifica tu comercio en el checkout web |
+| Llave privada | `prv_prod_XyZ789...` | Permite crear links de pago (¡nunca la compartas!) |
+| Secreto de Eventos | `prod_events_AbC...` | Valida que los pagos son genuinos de Wompi |
+| Secreto de Integridad | `prod_integrity_XyZ...` | Asegura que los montos del checkout web no fueron alterados |
+
+<Callout type="warning">
+  Las llaves que empiezan con `test_` o `pub_test_` son para pruebas y no procesan pagos reales. Para producción, usa las llaves que empiezan con `prod_` o `pub_prod_`.
+</Callout>
+
+---
+
+## ¿Qué necesito según mi caso?
+
+### Solo Links de Pago (WhatsApp)
+
+Si solo quieres que el asistente de WhatsApp envíe enlaces de pago a tus clientes:
+
+**Credenciales requeridas:**
+- ✅ Llave privada
+- ✅ Secreto de Eventos
+
+**Configuración adicional:**
+- URL del Webhook (se genera automáticamente, debes copiarlo a Wompi)
+
+---
+
+### Links de Pago + Checkout Web (Catálogo)
+
+Si además quieres que los clientes paguen directamente desde tu catálogo web:
+
+**Credenciales requeridas:**
+- ✅ Llave privada
+- ✅ Secreto de Eventos
+- ✅ Llave pública
+- ✅ Secreto de Integridad
+
+---
+
+## Configurar en SkyTienda
+
+1. Ve a **Configuración → Integraciones → Wompi**
+2. Ingresa tus credenciales según el nivel que desees activar
+3. Copia la **URL del Webhook** que aparece en pantalla
+4. Regresa a Wompi → **Desarrollo → Programadores**
+5. En el campo "URL de Eventos", pega la URL del webhook
+6. Guarda los cambios en ambas plataformas
+
+<Callout type="info">
+  El webhook es esencial para que SkyTienda reciba las confirmaciones de pago automáticamente. Sin él, tendrías que confirmar cada pago manualmente.
+</Callout>
+
+---
+
+## Configuración de impuestos (IVA)
+
+Si tus precios ya incluyen IVA, activa la opción **"IVA incluido en precios"** y especifica el porcentaje (generalmente 19%). Esto permite que Wompi muestre el desglose correcto al cliente.
+
+---
+
+## Verificar que todo funciona
+
+1. **Links de Pago:** Pide a tu asistente que genere un link de prueba
+2. **Checkout Web:** Realiza una compra de prueba en tu catálogo
+
+<Callout type="info">
+  Si usas llaves de prueba (`test_`), podrás simular pagos sin cargos reales. Esto es útil para verificar que todo está configurado correctamente antes de pasar a producción.
+</Callout>
+
+### Datos de prueba (Sandbox)
+
+Cuando uses llaves de prueba, utiliza estos datos para simular transacciones:
+
+**Tarjetas de crédito/débito:**
+
+| Número de tarjeta | Resultado |
+|-------------------|-----------|
+| `4242 4242 4242 4242` | Transacción **aprobada** ✅ |
+| `4111 1111 1111 1111` | Transacción **rechazada** ❌ |
+
+- **Fecha de vencimiento:** Cualquier fecha futura (ej: `12/28`)
+- **CVC:** Cualquier número de 3 dígitos (ej: `123`)
+- **Nombre:** Cualquier nombre
+
+**Nequi:**
+
+| Número de celular | Resultado |
+|-------------------|-----------|
+| `3991111111` | Transacción **aprobada** ✅ |
+| `3992222222` | Transacción **rechazada** ❌ |
+
+<Callout type="warning">
+  Si usas cualquier otro número de tarjeta o celular que no esté en esta lista, la transacción terminará en estado **ERROR**.
+</Callout>
+
+---
+
+## Solución de problemas
+
+| Problema | Solución |
+|----------|----------|
+| El link de pago no se genera | Verifica que la llave privada y secreto de eventos estén correctos |
+| El pago no se confirma automáticamente | Revisa que la URL del webhook esté configurada en Wompi |
+| Error en el checkout web | Verifica que la llave pública y secreto de integridad estén configurados |
+| Los pagos aparecen como prueba | Cambia a las llaves de producción (sin `test_` en el nombre) |
+
+---
+
+## Siguiente paso
+
+Una vez configurado Wompi, asegúrate de agregarlo como método de pago disponible.
+
+→ [Métodos de pago](/empezar/metodos-pago)

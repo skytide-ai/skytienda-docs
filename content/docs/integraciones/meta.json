@@ -1,0 +1,9 @@
+{
+  "title": "Integraciones",
+  "icon": "Plug",
+  "description": "Conecta servicios externos para potenciar tu tienda",
+  "pages": [
+    "index",
+    "wompi"
+  ]
+}

@@ -1,7 +1,27 @@
 import { RootProvider } from 'fumadocs-ui/provider/next';
+import { defineI18nUI } from 'fumadocs-ui/i18n';
+import { i18n } from '@/lib/i18n';
 import './global.css';
 import { Inter, Nunito } from 'next/font/google';
 import Link from 'next/link';
+
+const { provider } = defineI18nUI(i18n, {
+  translations: {
+    es: {
+      displayName: 'Español',
+      search: 'Buscar',
+      searchNoResult: 'No se encontraron resultados',
+      toc: 'En esta página',
+      tocNoHeadings: 'Sin encabezados',
+      lastUpdate: 'Última actualización',
+      chooseLanguage: 'Elegir idioma',
+      nextPage: 'Página siguiente',
+      previousPage: 'Página anterior',
+      chooseTheme: 'Tema',
+      editOnGithub: 'Editar en GitHub',
+    },
+  },
+});
 
 const inter = Inter({
   subsets: ['latin'],
@@ -19,11 +39,11 @@ function WhatsappButton() {
       href="https://wa.me/573002182405"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full bg-[#27eaa6] pl-4 pr-2 py-2 text-[#193133] shadow-lg transition-transform hover:scale-105 active:scale-95"
+      className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full bg-[#27eaa6] p-2 md:pl-4 md:pr-2 text-[#193133] shadow-lg transition-transform hover:scale-105 active:scale-95"
       aria-label="Contactar por Whatsapp"
     >
-      <span className="text-sm font-bold">¿Dudas? Escríbenos</span>
-      <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#193133]/10">
+      <span className="hidden md:block text-sm font-bold">¿Dudas? Escríbenos</span>
+      <span className="flex h-10 w-10 items-center justify-center rounded-full md:bg-[#193133]/10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"
@@ -42,7 +62,7 @@ export default function Layout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="es" className={`${inter.variable} ${nunito.variable}`} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen font-sans">
-        <RootProvider>{children}</RootProvider>
+        <RootProvider i18n={provider('es')}>{children}</RootProvider>
         <WhatsappButton />
       </body>
     </html>
