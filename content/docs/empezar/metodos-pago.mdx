@@ -1,0 +1,131 @@
+---
+title: Métodos de pago
+description: Configura los métodos de pago que aceptarás en tu tienda
+---
+
+Configura cómo tus clientes pueden pagarte. Puedes tener hasta **5 métodos de pago** activos.
+
+## Acceder a la configuración
+
+1. Ve a **Configuración → Pagos**
+2. Haz clic en **Agregar método**
+3. Selecciona el método que quieres configurar
+
+## Métodos disponibles
+
+### Pago con Wompi
+
+Acepta los métodos de pago que tengas configurados en tu cuenta de Wompi (tarjetas, PSE, Nequi, Bancolombia, etc.).
+
+<Callout type="warning">
+  Wompi requiere configuración previa. Ve a **Configuración → Integraciones → Wompi** para conectar tu cuenta.
+</Callout>
+
+**Flujo del agente:**
+> El agente generará un link de pago seguro de Wompi. El cliente verá los métodos disponibles según tu configuración de Wompi. Recibirás una notificación automática cuando el pago sea exitoso.
+
+Si el pago es exitoso, la orden pasa automáticamente a **confirmada** y el pago a **pagado**. Podrás ver la referencia de pago de Wompi en el detalle de la orden.
+
+---
+
+### Transferencia bancaria
+
+**Campos requeridos:**
+- Banco
+- Tipo de cuenta (ahorros o corriente)
+- Número de cuenta
+- Titular
+
+**Flujo del agente:**
+> El agente compartirá los datos de pago y solicitará una foto del comprobante. Recibirás una notificación para verificar el pago y confirmar la orden.
+
+---
+
+### Nequi
+
+Billetera digital de Bancolombia.
+
+**Campo requerido:**
+- Número de celular
+
+**Flujo del agente:**
+> El agente compartirá tu número Nequi y solicitará una foto del comprobante. Recibirás una notificación para verificar el pago y confirmar la orden.
+
+---
+
+### Daviplata
+
+Billetera digital de Davivienda.
+
+**Campo requerido:**
+- Número de celular
+
+**Flujo del agente:**
+> El agente compartirá tu número Daviplata y solicitará una foto del comprobante. Recibirás una notificación para verificar el pago y confirmar la orden.
+
+---
+
+### Dale!
+
+Plataforma de pagos del Grupo Aval.
+
+**Campo requerido:**
+- Número de celular
+
+**Flujo del agente:**
+> El agente compartirá tu número Dale! y solicitará una foto del comprobante. Recibirás una notificación para verificar el pago y confirmar la orden.
+
+---
+
+### Bre-B
+
+Sistema de pagos del Banco de la República.
+
+**Campo requerido:**
+- Llave Bre-B (puede ser tu número de celular, correo, documento o código alfanumérico)
+
+**Flujo del agente:**
+> El agente compartirá tu llave Bre-B y solicitará una foto del comprobante. Recibirás una notificación para verificar el pago y confirmar la orden.
+
+---
+
+### ADDI
+
+Crédito digital - Compra ahora, paga después.
+
+**No requiere configuración de datos.**
+
+**Flujo del agente:**
+> El agente solicitará la cédula del cliente. Recibirás una notificación con la cédula para verificar el crédito en el portal de ADDI. Cuando ADDI te notifique que el pago fue exitoso, marca la orden como confirmada.
+
+---
+
+### Sistecredito
+
+Crédito digital - Pago en cuotas.
+
+**No requiere configuración de datos.**
+
+El flujo es igual que ADDI: el agente pide la cédula y tú verificas en el portal de Sistecredito.
+
+## Gestionar métodos
+
+### Reordenar
+
+Arrastra los métodos para cambiar el orden en que se muestran al cliente.
+
+### Habilitar/deshabilitar
+
+Usa el switch en cada método para activarlo o desactivarlo sin eliminarlo.
+
+### Cambiar nombre
+
+Puedes personalizar el nombre que ve el cliente. Por ejemplo, cambiar "Transferencia Bancaria" a "Transferencia Bancolombia".
+
+### Eliminar
+
+Haz clic en el ícono de basura para eliminar un método. Si el método tiene pagos asociados, se desactivará en lugar de eliminarse para preservar el historial.
+
+## Siguiente paso
+
+→ [Opciones de envío](empezar/opciones-envio)

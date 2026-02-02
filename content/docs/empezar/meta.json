@@ -1,0 +1,15 @@
+{
+  "title": "Primeros pasos",
+  "icon": "Rocket",
+  "pages": [
+    "index",
+    "configurar-tienda",
+    "conectar-whatsapp",
+    "agregar-productos",
+    "metodos-pago",
+    "opciones-envio",
+    "agente-ia",
+    "faqs",
+    "catalogo-web"
+  ]
+}

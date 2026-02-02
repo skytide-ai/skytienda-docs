@@ -1,0 +1,162 @@
+---
+title: Celestino - Tu agente IA
+description: Conoce a Celestino, el asistente de inteligencia artificial que atiende a tus clientes 24/7 por Whatsapp
+---
+
+**Celestino** es el agente de inteligencia artificial de Skytienda. Atiende a tus clientes por Whatsapp las 24 horas del día, los 7 días de la semana, respondiendo preguntas, tomando pedidos y procesando pagos automáticamente.
+
+## ¿Qué puede hacer Celestino?
+
+Celestino puede manejar una conversación de venta completa, desde que el cliente pregunta por un producto hasta que paga su pedido:
+
+### Mostrar y buscar productos
+
+Cuando un cliente pregunta por productos, Celestino puede buscar en tu catálogo, mostrar imágenes, precios, disponibilidad y variantes (tallas, colores, etc.).
+
+### Manejar el carrito
+
+Agrega productos al carrito del cliente, modifica cantidades o elimina productos según lo que el cliente pida.
+
+### Procesar pedidos
+
+Muestra opciones de envío, calcula costos (incluyendo envío gratis si aplica), y completa el checkout generando el número de pedido.
+
+### Gestionar pagos
+
+Genera links de pago de Wompi, recibe comprobantes de transferencia, y puede procesar solicitudes de crédito (ADDI, Sistecredito).
+
+### Dar seguimiento
+
+Informa al cliente sobre el estado de su pedido, el estado del pago, y comparte números de seguimiento cuando están disponibles.
+
+### Responder preguntas
+
+Usa las FAQs que configures para responder preguntas sobre tu tienda, métodos de pago, políticas de envío, etc.
+
+### Escalar a humanos
+
+Cuando detecta que necesita ayuda o el cliente lo pide, transfiere la conversación a tu equipo
+
+## Ejemplo de conversación
+
+```
+Cliente: Hola, busco una camiseta azul talla M
+
+Celestino: ¡Hola! 👋 Tengo varias opciones en azul talla M:
+
+[Imagen: Camiseta Básica Azul]
+Camiseta Básica Azul - $35.000
+Disponible en M
+
+[Imagen: Camiseta Premium Azul]
+Camiseta Premium Azul - $55.000
+Disponible en M
+
+¿Cuál te gustaría agregar al carrito?
+
+Cliente: La básica
+
+Celestino: Perfecto, agregué la Camiseta Básica Azul talla M
+a tu carrito.
+
+Tu carrito:
+• 1x Camiseta Básica Azul (M) - $35.000
+Subtotal: $35.000
+
+¿Deseas agregar algo más o procedemos al checkout?
+```
+
+## Cuándo escala a un humano
+
+Celestino sabe reconocer cuándo necesita ayuda y ofrece transferir la conversación en casos como:
+
+- **El cliente lo pide** - Cuando solicita hablar con alguien del equipo
+- **Problemas que no puede resolver** - Devoluciones, reembolsos, errores en pedidos, problemas de entrega
+- **Cliente frustrado** - Cuando detecta que el cliente no está satisfecho con la atención
+- **Preguntas sin respuesta** - Cuando no encuentra la información en las FAQs
+
+<Callout type="info">
+  Celestino **siempre pregunta primero** antes de transferir: "¿Te gustaría que te conecte con alguien de nuestro equipo?"
+</Callout>
+
+Cuando el cliente confirma:
+
+1. Se desactiva el agente para esa conversación
+2. Tu equipo recibe una notificación
+3. Puedes responder manualmente desde el panel de chat
+4. Cuando termines, puedes reactivar a Celestino
+
+## Qué NO puede hacer Celestino
+
+<Callout type="warning">
+  Es importante conocer las limitaciones para saber cuándo intervenir manualmente.
+</Callout>
+
+- ❌ **Responder con ventana cerrada** - Solo funciona dentro de las 24h
+- ❌ **Enviar plantillas** - Solo tú puedes enviar plantillas para reabrir conversaciones
+- ❌ Aplicar descuentos o cupones
+- ❌ Reservar productos (solo verifica stock)
+- ❌ Procesar devoluciones o reembolsos
+- ❌ Modificar pedidos ya confirmados
+- ❌ Enviar facturas por email
+- ❌ Programar mensajes o recordatorios
+- ❌ Verificar comprobantes de pago (el equipo lo hace)
+
+## Cómo maneja los pagos
+
+### Pagos con tarjeta (Wompi)
+
+1. Genera link de pago automáticamente al checkout
+2. Comparte el link con el cliente
+3. Informa cuántas horas tiene para pagar
+4. Si el cliente pierde el link, genera uno nuevo
+
+### Transferencias bancarias
+
+1. Comparte instrucciones de pago (cuenta, banco, etc.)
+2. Recibe la imagen del comprobante
+3. Asocia el comprobante al pedido
+4. Informa que el equipo verificará el pago
+
+### Crédito (ADDI, Sistecredito)
+
+1. Solicita el número de cédula del cliente
+2. Envía la solicitud de crédito
+3. Informa que recibirán respuesta del equipo
+
+## Personalizar a Celestino
+
+En **Configuración → Tienda** puedes configurar:
+
+- **Nombre del agente** - Puedes cambiarlo de "Celestino" a otro nombre
+- **Personalidad** - Tono formal, casual, amigable, etc.
+- **FAQs** - Preguntas frecuentes que puede responder
+- **Horario de atención** - Comportamiento fuera de horario
+
+## FAQ
+
+**¿Celestino funciona 24/7?**
+Sí, responde automáticamente a cualquier hora **mientras la ventana de 24h esté abierta**. Si la ventana está cerrada, debes enviar una plantilla manualmente primero. Puedes configurar un horario de atención, y fuera de ese horario se envía un mensaje automático personalizado que no consume créditos.
+
+**¿Puedo desactivar a Celestino?**
+Sí, puedes desactivarlo por conversación (después de escalar) o globalmente en configuración.
+
+**¿Qué tan rápido responde?**
+Celestino se toma un momento para asegurarse de que el cliente terminó de escribir antes de responder. Por eso puede tardar hasta 30 segundos en contestar.
+
+**¿Celestino puede enviar imágenes?**
+Sí, puede enviar imágenes de productos, y recibir imágenes de comprobantes de pago.
+
+**¿Consume créditos cada respuesta?**
+Sí, cada mensaje de Celestino consume 1 crédito.
+
+**¿Qué pasa si me quedo sin créditos?**
+Celestino deja de responder automáticamente. Los mensajes se guardan pero no reciben respuesta hasta que tengas créditos.
+
+## Relacionado
+
+- [Escalación a humano](/agente-ia/escalacion) - Detalles del proceso de transferencia
+- [Comprobantes de pago](/agente-ia/pagos-agente) - Cómo Celestino maneja comprobantes
+- [Créditos](/conceptos/creditos) - Consumo de créditos por mensaje
+- [Panel de chat](/chat) - Cómo ver y retomar conversaciones
+- [Notificaciones](/notificaciones) - Alertas de escalación

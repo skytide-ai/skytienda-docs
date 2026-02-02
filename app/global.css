@@ -1,0 +1,143 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+/* Skytienda Fonts */
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-nunito), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Skytienda Brand Colors */
+@theme inline {
+  /* Primary: Mint Green */
+  --color-fd-primary: #27eaa6;
+  --color-fd-primary-foreground: #193133;
+
+  /* Accent: Mint Green */
+  --color-fd-accent: #27eaa6;
+  --color-fd-accent-foreground: #193133;
+
+  /* Secondary: Light Mint */
+  --color-fd-secondary: #ebfff6;
+  --color-fd-secondary-foreground: #193133;
+
+  /* Ring/Focus: Mint Green */
+  --color-fd-ring: #27eaa6;
+}
+
+/* Light mode adjustments */
+:root {
+  --color-fd-background: #ffffff;
+  --color-fd-foreground: #004d43;
+  --color-fd-muted: #ebfff6;
+  --color-fd-muted-foreground: #004d43;
+  --color-fd-border: #e5e7eb;
+  --color-fd-card: #ffffff;
+  --color-fd-card-foreground: #193133;
+  --color-fd-popover: #ffffff;
+  --color-fd-popover-foreground: #193133;
+  --color-fd-secondary: #ebfff6;
+  --color-fd-secondary-foreground: #193133;
+  --color-fd-accent: #27eaa6;
+  --color-fd-accent-foreground: #193133;
+  --color-fd-primary: #27eaa6;
+  --color-fd-primary-foreground: #193133;
+}
+
+/* Dark mode adjustments */
+.dark {
+  --color-fd-background: #101414;
+  --color-fd-foreground: #e8eeed;
+  --color-fd-muted: #1a1f1e;
+  --color-fd-muted-foreground: #787f7d;
+  --color-fd-border: #2a2f2e;
+  --color-fd-card: #151919;
+  --color-fd-card-foreground: #e8eeed;
+  --color-fd-popover: #151919;
+  --color-fd-popover-foreground: #e8eeed;
+  --color-fd-secondary: #1a1f1e;
+  --color-fd-secondary-foreground: #e8eeed;
+
+  /* Accent sutil para hovers generales */
+  --color-fd-accent: #1a2f2a;
+  --color-fd-accent-foreground: #e8eeed;
+
+  /* Primary: verde mint para elementos destacados */
+  --color-fd-primary: #27eaa6;
+  --color-fd-primary-foreground: #193133;
+  --color-fd-ring: #27eaa6;
+}
+
+/* Texto corrido más tenue en dark mode */
+.dark p,
+.dark li,
+.dark td {
+  color: #a0a5a4;
+}
+
+/* Fix: hovers con fondo verde y texto oscuro (nav cards y sidebar) */
+.dark .hover\:bg-fd-accent\/80:hover,
+.dark .hover\:bg-fd-accent\/50:hover {
+  background-color: #27eaa6 !important;
+}
+
+.dark .hover\:bg-fd-accent\/80:hover,
+.dark .hover\:bg-fd-accent\/80:hover p,
+.dark .hover\:bg-fd-accent\/80:hover .text-fd-muted-foreground,
+.dark .hover\:bg-fd-accent\/50:hover,
+.dark .hover\:bg-fd-accent\/50:hover .text-fd-muted-foreground {
+  color: #193133 !important;
+}
+
+/* Search toggle: fondo oscuro en dark mode */
+.dark .bg-fd-secondary\/50 {
+  background-color: rgba(26, 31, 30, 0.5) !important;
+}
+
+/* Search toggle y dialog: hover neutral (ambos modos) */
+.rounded-lg.border.bg-fd-secondary\/50.hover\:bg-fd-accent:hover,
+[role="dialog"] .hover\:bg-fd-accent:hover,
+[role="dialog"] [aria-selected="true"] {
+  background-color: #e5e7eb !important;
+}
+
+.rounded-lg.border.bg-fd-secondary\/50.hover\:text-fd-accent-foreground:hover,
+[role="dialog"] .hover\:text-fd-accent-foreground:hover,
+[role="dialog"] [aria-selected="true"] {
+  color: #193133 !important;
+}
+
+/* Dark mode: colores neutros oscuros para search */
+.dark .rounded-lg.border.bg-fd-secondary\/50.hover\:bg-fd-accent:hover,
+.dark [role="dialog"] .hover\:bg-fd-accent:hover,
+.dark [role="dialog"] [aria-selected="true"] {
+  background-color: #1a1f1e !important;
+}
+
+.dark .rounded-lg.border.bg-fd-secondary\/50.hover\:text-fd-accent-foreground:hover,
+.dark [role="dialog"] .hover\:text-fd-accent-foreground:hover,
+.dark [role="dialog"] [aria-selected="true"] {
+  color: #e8eeed !important;
+}
+
+/* Search dialog: hover neutral en resultados */
+.dark [role="dialog"] .bg-fd-accent,
+.dark [role="dialog"] [aria-selected="true"] {
+  background-color: #1a1f1e !important;
+}
+
+.dark [role="dialog"] .text-fd-accent-foreground,
+.dark [role="dialog"] [aria-selected="true"] {
+  color: #e8eeed !important;
+}
+
+/* Sidebar: secciones más prominentes */
+#nd-sidebar > div p.mt-6,
+#nd-sidebar-mobile p.mt-6 {
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-fd-foreground);
+}

@@ -1,0 +1,143 @@
+---
+title: Agregar productos
+description: Añade productos a tu catálogo para que Celestino pueda mostrarlos y venderlos
+---
+
+Sin productos, Celestino no tiene nada que ofrecer a tus clientes. En este paso agregarás los productos que quieres vender.
+
+## Formas de agregar productos
+
+Tienes dos opciones:
+
+1. **Manualmente** - Uno por uno desde el panel
+2. **Importación CSV** - Múltiples productos desde un archivo
+
+## Agregar producto manualmente
+
+### 1. Crear nuevo producto
+
+1. Ve a **Productos** en el menú lateral
+2. Haz clic en **Nuevo**
+3. Completa el formulario
+
+### 2. Información básica
+
+| Campo | Descripción | Obligatorio |
+|-------|-------------|-------------|
+| **Nombre** | Nombre del producto | Sí |
+| **Descripción** | Descripción detallada para clientes | No |
+| **SKU base** | Código único para identificar el producto | Sí |
+| **Categoría** | Categoría para organizar productos | No |
+| **Tags** | Etiquetas para búsqueda (ej: "verano", "oferta") | No |
+
+<Callout type="info">
+  **Sobre el SKU:** Es un código único que tú defines. Puede ser alfanumérico (ej: CAM-001, ZAPATO-NEGRO-42). Se usa internamente para identificar productos.
+</Callout>
+
+### 3. Imágenes
+
+- Sube al menos una imagen del producto
+- La primera imagen será la imagen principal
+- Puedes agregar múltiples imágenes
+- Formatos aceptados: JPG, PNG, WebP
+- También puedes subir videos cortos del producto
+
+### 4. Variantes (si aplica)
+
+Si tu producto tiene variantes (tallas, colores, etc.):
+
+1. Define los atributos (ej: "Talla", "Color")
+2. Define los valores de cada atributo (ej: S, M, L, XL)
+3. El sistema genera automáticamente las combinaciones
+4. Para cada variante, define:
+   - **SKU** específico de la variante
+   - **Precio**
+   - **Stock**
+
+**Ejemplo:**
+- Camiseta con Talla (S, M, L) y Color (Negro, Blanco)
+- Se generan 6 variantes: S-Negro, S-Blanco, M-Negro, M-Blanco, L-Negro, L-Blanco
+
+### 5. Precio y stock
+
+Si no tienes variantes:
+- Define el precio único
+- Define el stock disponible
+
+Si tienes variantes:
+- Cada variante tiene su propio precio y stock
+
+### 6. Estado del producto
+
+| Estado | Qué significa |
+|--------|---------------|
+| **Activo** | Visible y disponible para vender |
+| **Borrador** | No visible para clientes |
+| **Inactivo** | Oculto temporalmente |
+
+## Importar desde CSV
+
+Para agregar muchos productos rápidamente:
+
+### 1. Descargar plantilla
+
+1. Ve a **Productos**
+2. Haz clic en **Importar**
+3. Descarga la plantilla CSV
+
+### 2. Completar el archivo
+
+La plantilla incluye columnas para:
+- Nombre, descripción, SKU, precio, stock
+- Categoría, estado, tags
+- Atributos de variantes
+
+**Reglas importantes:**
+- Las categorías deben existir previamente en el sistema
+- Separa múltiples tags con comas
+- Para variantes, usa los campos `variant_attribute` y `variant_values`
+
+### 3. Subir el archivo
+
+1. Haz clic en **Importar**
+2. Selecciona tu archivo CSV
+3. Haz clic en **Importar**
+4. Revisa los resultados
+
+<Callout type="warning">
+  Si hay errores, el sistema te mostrará cuáles filas fallaron y por qué. Corrige el archivo y vuelve a intentar.
+</Callout>
+
+## Límites por plan
+
+Cada plan tiene un límite de productos:
+
+| Plan | Límite de productos |
+|------|---------------------|
+| El Negocito | 30 productos |
+| El Negocio | 150 productos |
+| El Negociazo | 300 productos |
+
+Si alcanzas el límite, necesitarás actualizar tu plan para agregar más productos.
+
+## Productos e inteligencia artificial
+
+Cuando agregas o modificas un producto, Celestino lo "aprende" automáticamente. Verás un indicador junto a cada producto:
+
+| Estado | Significado |
+|--------|-------------|
+| **Sincronizado** (verde) | Celestino ya puede hablar sobre este producto |
+| **Generando...** (amarillo) | Se está procesando, espera unos minutos |
+| **Pendiente** (gris) | En cola para procesarse |
+| **Error** (rojo) | Hubo un problema, haz clic en "Regenerar" |
+
+Una vez sincronizado, Celestino puede:
+- Buscar el producto por nombre o descripción
+- Responder preguntas sobre sus características
+- Recomendarlo a clientes interesados
+
+## Siguiente paso
+
+Con productos agregados, ahora configura los métodos de pago que aceptarás.
+
+→ [Métodos de pago](/empezar/metodos-pago)

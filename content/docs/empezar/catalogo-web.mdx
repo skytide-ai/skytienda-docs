@@ -1,0 +1,114 @@
+---
+title: Catálogo web
+description: Configura tu tienda online pública
+---
+
+Tu catálogo web es una página pública donde los clientes pueden ver tus productos.
+
+## Acceder a la configuración
+
+1. Ve a **Configuración → Catálogo**
+
+## Estado del catálogo
+
+- **Público**: Cualquier persona puede ver tus productos
+- **Oculto**: El catálogo no está disponible públicamente
+
+## URL de tu catálogo
+
+Tu catálogo está disponible en:
+
+```
+https://tutienda.skytienda.co
+```
+
+Donde `tutienda` es el slug de tu tienda.
+
+### Diferencias por plan
+
+| Plan | URL | Marca de agua |
+|------|-----|---------------|
+| El Negocito | tutienda.skytienda.co | "Impulsado por Skytienda" |
+| El Negocio | tutienda.skytienda.co | "Impulsado por Skytienda" |
+| El Negociazo | Dominio personalizado | Sin marca de agua |
+
+## Imágenes
+
+### Logo
+
+- Tamaño recomendado: 400×400px
+- Máximo: 2MB
+
+### Banner
+
+- Tamaño recomendado: 1920×550px
+- Máximo: 5MB
+
+## Personalización
+
+### Color de acento
+
+El color que se usa en botones y enlaces destacados. Puedes elegirlo con el selector de color o escribir el código hexadecimal.
+
+### Descripción SEO
+
+Texto que aparece en buscadores y redes sociales cuando comparten tu catálogo.
+
+- Máximo 160 caracteres
+
+## Redes sociales
+
+Todas son opcionales:
+
+- **Instagram**: @usuario
+- **Facebook**: facebook.com/pagina
+- **TikTok**: @usuario
+- **Sitio web**: URL completa
+
+## Opciones de productos
+
+### Mostrar productos agotados
+
+- **Activado**: Los productos sin stock aparecen marcados como "Sin stock"
+- **Desactivado**: Los productos sin stock no aparecen
+
+---
+
+## Dominio personalizado (El Negociazo)
+
+Con el plan El Negociazo puedes usar tu propio dominio (ej: `tienda.miempresa.com`).
+
+### Configuración
+
+1. Ve a **Configuración → Catálogo → Dominio personalizado → Configurar**
+2. Ingresa tu dominio y guarda
+3. Configura los registros DNS en tu proveedor:
+
+   **Subdominio** (ej: tienda.miempresa.com):
+   | Tipo | Host | Valor |
+   |------|------|-------|
+   | CNAME | tienda | (mostrado en dashboard) |
+
+   **Dominio raíz** (ej: miempresa.com):
+   | Tipo | Host | Valor |
+   |------|------|-------|
+   | A | @ | (mostrado en dashboard) |
+4. Espera la propagación DNS (5 min - 48 horas)
+5. Haz clic en **Verificar**
+
+### Estados
+
+| Estado | Significado |
+|--------|-------------|
+| 🟡 DNS Pendiente | Registros no detectados aún |
+| 🟢 Verificado | Activo con SSL automático |
+| 🔴 Error | Revisar configuración DNS |
+
+<Callout type="info">
+  El SSL se genera automáticamente una vez verificado. Si necesitas cambiar el dominio, elimina el actual primero.
+</Callout>
+
+## Relacionado
+
+- [Conceptos: Catálogo web](conceptos/catalogo-web) - Más información sobre el catálogo
+- [Primeros pasos](empezar) - Volver al índice de configuración

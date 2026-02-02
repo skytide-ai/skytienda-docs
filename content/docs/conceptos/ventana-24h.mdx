@@ -1,0 +1,120 @@
+---
+title: Ventana de 24 horas
+description: Entiende cómo funciona la ventana de conversación de Whatsapp Business y por qué es importante
+---
+
+La **ventana de 24 horas** es una regla de Whatsapp Business que determina cuándo puedes enviar mensajes libremente a un cliente y cuándo necesitas usar plantillas aprobadas.
+
+## ¿Qué es la ventana de 24 horas?
+
+Cuando un cliente te envía un mensaje, se abre una "ventana de conversación" que dura **24 horas**. Durante este período:
+
+- Puedes enviar **cualquier tipo de mensaje** (texto, imágenes, archivos)
+- No necesitas usar plantillas pre-aprobadas
+- **Mensajes manuales y plantillas Utility son GRATIS**
+- Solo las respuestas de Celestino consumen créditos (1 por mensaje)
+
+<Callout type="info">
+  Cada vez que el cliente te envía un nuevo mensaje, la ventana se **extiende automáticamente** otras 24 horas.
+</Callout>
+
+## Estados de la ventana
+
+### Ventana abierta
+
+Cuando la ventana está abierta verás un indicador **verde** en el panel de chat que muestra:
+- Que la ventana está activa
+- La hora en que expira
+
+**Qué puedes hacer:**
+- Enviar mensajes de texto libres
+- Enviar imágenes y archivos
+- Responder sin restricciones
+
+### Ventana cerrada
+
+Cuando la ventana expira verás un indicador **amarillo** que dice:
+> "La ventana de 24 horas ha expirado. Solo puedes enviar plantillas aprobadas."
+
+**Qué puedes hacer:**
+- Enviar únicamente plantillas aprobadas por Meta
+- Esperar a que el cliente responda para reabrir la ventana
+
+## ¿Cómo funciona técnicamente?
+
+```
+Cliente envía mensaje
+        ↓
+Se abre ventana (24 horas)
+        ↓
+    ┌─────────────────┐
+    │ VENTANA ABIERTA │ → Mensajes libres permitidos
+    └─────────────────┘
+        ↓ (pasan 24h sin respuesta del cliente)
+    ┌─────────────────┐
+    │ VENTANA CERRADA │ → Solo plantillas permitidas
+    └─────────────────┘
+        ↓ (cliente responde)
+    ┌─────────────────┐
+    │ VENTANA ABIERTA │ → Se reinicia el ciclo
+    └─────────────────┘
+```
+
+## Beneficio en créditos
+
+La ventana abierta te ahorra créditos significativamente:
+
+| Tipo de mensaje | Ventana abierta | Ventana cerrada |
+|-----------------|-----------------|-----------------|
+| Mensajes manuales | **GRATIS** | No permitido |
+| Plantillas Utility (pago, envío, tracking) | **GRATIS** | 1 crédito |
+| Plantillas Marketing | 2 créditos | 2 créditos |
+| Respuestas de Celestino | 1 crédito | **No puede responder** |
+
+<Callout type="info">
+  **Tip:** Aprovecha la ventana abierta para enviar confirmaciones y actualizaciones (Utility) sin gastar créditos.
+</Callout>
+
+## Consejos prácticos
+
+<Callout type="warning">
+  **No envíes solo plantillas esperando respuesta.** Si el cliente no responde, la ventana seguirá cerrada. Las plantillas son para iniciar conversaciones, no para mantenerlas.
+</Callout>
+
+### Buenas prácticas
+
+1. **Responde rápido** - Aprovecha la ventana mientras está abierta
+2. **Haz preguntas** - Incentiva al cliente a responder para extender la ventana
+3. **Usa plantillas estratégicamente** - Para reactivar conversaciones importantes
+
+### Qué evitar
+
+- Enviar muchas plantillas seguidas sin esperar respuesta
+- Ignorar mensajes de clientes (desperdicia la ventana abierta)
+- Asumir que la ventana sigue abierta sin verificar el indicador
+
+## FAQ
+
+<Callout type="info">
+  **¿Por qué existe esta regla?**
+
+  Meta implementó la ventana de 24 horas para proteger a los usuarios de spam. Las empresas solo pueden enviar mensajes libremente cuando el cliente ha mostrado interés reciente al escribir primero.
+</Callout>
+
+**¿Qué pasa si el cliente no responde?**
+Solo puedes enviar plantillas aprobadas. El cliente debe enviarte un mensaje para reabrir la ventana.
+
+**¿Puedo reabrir la ventana sin que el cliente responda?**
+No. La única forma de reabrir la ventana es que el cliente te envíe un mensaje.
+
+**¿La ventana se reinicia con cada mensaje del cliente?**
+Sí. Cada mensaje del cliente extiende la ventana 24 horas adicionales desde ese momento.
+
+**¿Celestino puede responder con la ventana cerrada?**
+No. Celestino solo puede responder cuando la ventana está abierta. Si la ventana está cerrada, debes enviar una plantilla manualmente para reabrir la conversación y que Celestino pueda retomar.
+
+## Relacionado
+
+- [Plantillas](conceptos/plantillas) - Mensajes para usar con ventana cerrada
+- [Créditos](conceptos/creditos) - Costos según tipo de mensaje
+- [Panel de chat](chat) - Cómo ver el estado de la ventana

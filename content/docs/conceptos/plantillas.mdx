@@ -1,0 +1,132 @@
+---
+title: Plantillas de mensajes
+description: Qué son las plantillas de Whatsapp Business, cómo funcionan y por qué las necesitas
+---
+
+Las **plantillas** son mensajes pre-aprobados por Meta que puedes usar para contactar clientes cuando la [ventana de 24 horas](conceptos/ventana-24h) está cerrada.
+
+## ¿Qué es una plantilla?
+
+Una plantilla es un mensaje estructurado que:
+
+1. **Debe ser aprobado por Meta** antes de poder usarse
+2. **Puede incluir variables** para personalizar (nombre, número de pedido, etc.)
+3. **Tiene un costo específico** en créditos según su categoría
+
+<Callout type="info">
+  Las plantillas son la única forma de iniciar una conversación con un cliente o reactivar una conversación cuando la ventana de 24 horas ha expirado.
+</Callout>
+
+## Categorías de plantillas
+
+Meta clasifica las plantillas en dos categorías principales, cada una con costos diferentes:
+
+### Utility (Utilidad)
+
+Mensajes transaccionales relacionados directamente con una acción del cliente:
+
+- **Pago confirmado** - Notificar que el pago fue procesado
+- **Pago rechazado** - Informar que hubo un problema con el pago
+- **Pedido enviado** - Avisar que el pedido está en camino
+- **Tracking agregado** - Compartir número de seguimiento
+
+**Costo:**
+- Dentro de ventana 24h: **GRATIS**
+- Fuera de ventana: **1 crédito** por mensaje
+
+### Marketing
+
+Mensajes promocionales para reactivar clientes:
+
+- **Carrito abandonado** - Recordar productos que dejaron en el carrito
+- **Cumpleaños** - Felicitar y ofrecer descuento especial
+
+**Costo:** 2 créditos por mensaje
+
+<Callout type="info">
+  Las plantillas Marketing se usan típicamente para reactivar conversaciones cuando la ventana está cerrada.
+</Callout>
+
+<Callout type="warning">
+  **Meta puede cambiar la categoría de tu plantilla.** Si envías una plantilla como Utility pero Meta considera que es Marketing, la reclasificará y pagarás el costo de Marketing.
+</Callout>
+
+## Proceso de aprobación
+
+```
+Creas plantilla en Skytienda
+           ↓
+Se envía a Meta para revisión
+           ↓
+    ┌─────────────────┐
+    │ Meta revisa     │ → 24-48 horas típicamente
+    └─────────────────┘
+           ↓
+   ┌───────┴───────┐
+   ↓               ↓
+Aprobada       Rechazada
+   ↓               ↓
+Lista para    Debes crear
+usar          una nueva
+```
+
+### Motivos comunes de rechazo
+
+- Contenido promocional marcado como Utility
+- Variables mal formateadas
+- Texto que viola políticas de Meta (contenido prohibido)
+- Gramática o formato confuso
+
+## Usar plantillas en Skytienda
+
+### Desde el panel de chat
+
+1. Abre la conversación con el cliente
+2. Cuando la ventana está cerrada, verás el selector de plantillas
+3. Selecciona la plantilla que quieres enviar
+4. Completa las variables (si las tiene)
+5. Envía
+
+### En secuencias automáticas
+
+Las plantillas también se usan en [secuencias de marketing](marketing/secuencias) para:
+- Recuperar carritos abandonados
+- Enviar seguimiento post-compra
+- Notificar sobre envíos
+
+## Qué pasa si Meta cambia la categoría
+
+Si envías una plantilla como **Utility** pero Meta la clasifica como **Marketing**:
+
+1. **Pagarás 2 créditos** en lugar de 1 por cada envío (el doble)
+2. Tus costos serán mayores de lo esperado
+3. Las secuencias que usan esa plantilla consumirán más créditos
+
+**Recomendación:**
+1. Elimina el journey/secuencia que usa esa plantilla
+2. Crea una plantilla nueva con texto más claramente transaccional
+3. Crea un journey nuevo con la plantilla correcta
+
+## FAQ
+
+**¿Cuánto tarda en aprobarse una plantilla?**
+Generalmente 24-48 horas, aunque puede variar.
+
+**¿Por qué rechazaron mi plantilla?**
+Revisa las [guías de Meta sobre contenido de plantillas]. Los motivos más comunes son contenido promocional en plantillas Utility o violaciones de políticas.
+
+**¿Puedo editar una plantilla aprobada?**
+No. Si necesitas cambiar el texto, debes crear una plantilla nueva y esperar aprobación.
+
+**¿Cuántas plantillas puedo tener?**
+No hay límite, pero te recomendamos mantener solo las que uses activamente para evitar confusión.
+
+**¿Celestino usa plantillas?**
+No. Celestino solo responde con mensajes libres cuando la ventana está abierta. Si la ventana está cerrada, **tú** debes enviar una plantilla manualmente para reabrir la conversación.
+
+## Relacionado
+
+- [Ventana de 24 horas](conceptos/ventana-24h) - Cuándo necesitas plantillas
+- [Créditos](conceptos/creditos) - Costos por tipo de plantilla
+- [Costos de plantillas](marketing/costos-plantillas) - Detalles de pricing
+- [Secuencias](marketing/secuencias) - Usar plantillas en automatizaciones

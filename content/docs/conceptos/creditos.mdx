@@ -1,0 +1,124 @@
+---
+title: Sistema de créditos
+description: Cómo funcionan los créditos en Skytienda, cuánto cuestan los mensajes y qué pasa cuando se agotan
+---
+
+Los **créditos** son la unidad de consumo en Skytienda. Cada mensaje que envías (ya sea del agente IA o tuyo) consume una cantidad específica de créditos según su tipo.
+
+## ¿Cómo funcionan los créditos?
+
+Tu plan incluye una cantidad mensual de créditos que se **reinician cada ciclo de facturación**. Los créditos se consumen cada vez que se envía un mensaje exitosamente.
+
+### Créditos por plan
+
+| Plan | Créditos mensuales | Crédito adicional |
+|------|-------------------|-------------------|
+| **El Negocito** | 500 | $0.025 USD |
+| **El Negocio** | 1,500 | $0.015 USD |
+| **El Negociazo** | 3,000 | $0.008 USD |
+
+<Callout type="info">
+  Si se te acaban los créditos del plan, puedes comprar créditos prepagados. La recarga mínima es de **$15 USD**. Los créditos prepagados expiran **3 meses** después de la compra.
+</Callout>
+
+## Consumo por tipo de mensaje
+
+El costo depende del tipo de mensaje **y si la ventana de 24 horas está abierta o cerrada**:
+
+### Dentro de la ventana de 24h (cliente escribió recientemente)
+
+| Tipo de mensaje | Créditos | Ejemplo |
+|-----------------|----------|---------|
+| **Respuestas de Celestino** | 1 | El agente IA responde al cliente |
+| **Mensajes manuales** | **GRATIS** | Tú escribes directamente al cliente |
+| **Plantillas Utility** | **GRATIS** | Confirmación de pedido, actualización de envío |
+
+### Fuera de la ventana (ventana cerrada)
+
+| Tipo de mensaje | Créditos | Ejemplo |
+|-----------------|----------|---------|
+| **Plantillas Utility** | 1 | Confirmación de pedido |
+| **Plantillas Marketing** | 2 | Promociones, recuperación de carrito |
+
+<Callout type="info">
+  **Tip:** Aprovecha la ventana abierta: tus mensajes manuales y plantillas Utility son gratis. Las plantillas Marketing siempre cuestan 2 créditos.
+</Callout>
+
+## Ver tu consumo
+
+### En el dashboard
+
+En la parte superior del dashboard siempre puedes ver:
+- Créditos disponibles
+- Porcentaje usado del mes
+
+### En la página de facturación
+
+En **Configuración → Facturación** encuentras:
+- Balance actual de créditos (plan + prepagados)
+- Créditos prepagados y su fecha de expiración
+- Opciones para recargar créditos
+
+## Créditos prepagados
+
+Además de los créditos de tu plan, puedes **comprar créditos adicionales**:
+
+- Se consumen **después** de los créditos del plan
+- Expiran **3 meses** después de la compra
+- Se usan en orden FIFO (los más antiguos primero)
+
+<Callout type="warning">
+  Los créditos prepagados no se acumulan con el siguiente mes. Úsalos antes de que expiren.
+</Callout>
+
+## ¿Qué pasa cuando se agotan?
+
+Cuando tus créditos llegan a cero:
+
+### Para el agente IA (Celestino)
+- **Deja de responder** automáticamente a los clientes
+- Los mensajes de clientes se guardan pero no reciben respuesta del agente
+- Puedes seguir respondiendo manualmente (los mensajes manuales no consumen créditos)
+
+### Cómo evitarlo
+
+1. **Monitorea tu consumo** regularmente en el dashboard
+2. **Compra créditos prepagados** como respaldo
+3. **Considera subir de plan** si consistentemente te quedas sin créditos
+
+## Ejemplo de cálculo
+
+Imagina que tienes el plan **El Negocio** (1,500 créditos/mes):
+
+| Acción | Créditos usados |
+|--------|-----------------|
+| Celestino responde 400 mensajes | 400 |
+| 50 confirmaciones de pedido dentro de ventana (Utility) | **0** (gratis) |
+| 30 confirmaciones fuera de ventana (Utility) | 30 |
+| Secuencia de carrito abandonado a 100 clientes (Marketing) | 200 |
+| **Total** | **630** |
+
+Te quedarían 870 créditos para el resto del mes.
+
+## FAQ
+
+**¿Los créditos no usados se acumulan?**
+No. Los créditos del plan se reinician cada mes. Solo los créditos prepagados se mantienen (hasta 3 meses).
+
+**¿Puedo ver qué mensajes consumieron créditos?**
+De momento no hay un desglose detallado. Puedes ver tu balance actual de créditos en la página de facturación.
+
+**¿Por qué las plantillas Marketing cuestan más?**
+Meta cobra más por mensajes promocionales. Este costo se refleja en los créditos de Skytienda.
+
+**¿Qué pasa si me quedo sin créditos a mitad de mes?**
+Puedes comprar créditos prepagados instantáneamente o esperar al reinicio del siguiente ciclo.
+
+**¿Celestino sigue funcionando sin créditos?**
+No. Celestino necesita créditos para responder. Sin créditos, los mensajes se guardan pero no reciben respuesta automática.
+
+## Relacionado
+
+- [Plantillas](conceptos/plantillas) - Tipos y costos de plantillas
+- [Planes y facturación](configuracion/planes) - Cambiar de plan
+- [Costos de plantillas](marketing/costos-plantillas) - Detalles de pricing por región
