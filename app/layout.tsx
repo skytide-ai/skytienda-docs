@@ -63,7 +63,6 @@ export default function Layout({ children }: LayoutProps<'/'>) {
     <html lang="es" className={`${inter.variable} ${nunito.variable}`} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen font-sans">
         <RootProvider i18n={provider('es')}>{children}</RootProvider>
-        <WhatsappButton />
       </body>
     </html>
   );
