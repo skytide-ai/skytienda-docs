@@ -64,7 +64,7 @@ export default function MantenimientoPage() {
 
           {/* Correo */}
           <Link
-            href="mailto:soporte@skytienda.com"
+            href="mailto:soporte@skytienda.co"
             className="inline-flex items-center gap-2 rounded-full border border-[#2a2f2e] bg-[#1a1f1e] px-6 py-3 text-sm font-bold text-[#e8eeed] transition-transform hover:scale-105 active:scale-95"
           >
             <svg
@@ -81,7 +81,7 @@ export default function MantenimientoPage() {
               <rect width="20" height="16" x="2" y="4" rx="2" />
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
-            soporte@skytienda.com
+            soporte@skytienda.co
           </Link>
         </div>
       </div>
