@@ -4,12 +4,12 @@
   "pages": [
     "index",
     "configurar-tienda",
-    "conectar-whatsapp",
     "agregar-productos",
     "metodos-pago",
     "opciones-envio",
     "agente-ia",
     "faqs",
-    "catalogo-web"
+    "catalogo-web",
+    "conectar-whatsapp"
   ]
 }

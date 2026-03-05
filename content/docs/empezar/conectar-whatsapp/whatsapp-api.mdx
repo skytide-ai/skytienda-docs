@@ -1,11 +1,7 @@
 ---
-title: Conectar Whatsapp
-description: Vincula tu número de Whatsapp Business para que Celestino pueda atender a tus clientes
+title: Whatsapp API (número nuevo)
+description: Conecta un número nuevo a Skytienda usando la Cloud API de Meta
 ---
-
-<Callout type="warning">
-  Este es el paso más crítico de la configuración. Sin Whatsapp conectado, Celestino no puede recibir ni responder mensajes de clientes.
-</Callout>
 
 Skytienda usa **WhatsApp Cloud API** de Meta para conectar tu número. Esto permite que Celestino:
 - Reciba mensajes de tus clientes
@@ -20,7 +16,7 @@ Antes de comenzar, asegúrate de tener:
 
 ### 1. Cuenta de Facebook
 
-Una cuenta de Facebook **registrada hace más de un mes**. Esta cuenta se usará para crear o vincular un Meta Business Manager.
+Una cuenta de Facebook activa. Esta cuenta se usará para crear o vincular un Meta Business Manager.
 
 ### 2. Número de teléfono
 
@@ -30,31 +26,15 @@ Una cuenta de Facebook **registrada hace más de un mes**. Esta cuenta se usará
 - Números cortos (short codes) no son permitidos
 - Una vez conectado a Cloud API, **no podrás usar ese número** en la app de Whatsapp personal o Business
 
-→ [Documentación oficial de números de teléfono - Meta Developers](https://developers.facebook.com/docs/whatsapp/cloud-api/phone-numbers)
+> [Documentación oficial de números de teléfono - Meta Developers](https://developers.facebook.com/docs/whatsapp/cloud-api/phone-numbers)
 
-### 3. Fanpage de Facebook
+### 3. Tu catálogo de Skytienda configurado
 
-Si no tienes un sitio web propio, necesitarás una **fanpage de Facebook** de tu negocio para usarla como página web oficial durante el registro.
+Tu [catálogo web de Skytienda](/empezar/catalogo-web) funciona como sitio web de tu negocio durante el registro con Meta. Antes de conectar Whatsapp, asegúrate de tener:
 
-<Callout type="info">
-  **Importante:** La fanpage debe tener información completa y coherente: nombre del negocio, descripción, datos de contacto, y estar activa.
-</Callout>
-
-### 4. Información del negocio (consistente)
-
-Meta verificará que tu información sea coherente en todas partes. Asegúrate de que los siguientes datos **coincidan exactamente** entre tu fanpage de Facebook, tu sitio web (si tienes) y lo que ingreses en el registro:
-
-| Dato | Dónde debe coincidir |
-|------|---------------------|
-| **Nombre del negocio** | Fanpage, sitio web, registro |
-| **Dirección** | Fanpage, documentos legales, registro |
-| **Email de contacto** | Fanpage, sitio web, registro |
-| **Teléfono** | Fanpage, sitio web |
-| **Categoría/industria** | Fanpage, registro |
-
-### 5. Email corporativo (recomendado)
-
-Un email con dominio propio (ej. `contacto@tunegocio.com`) ayuda a que Meta apruebe tu cuenta más rápido. El dominio debe coincidir con tu sitio web si tienes uno.
+- **Nombre de la tienda** configurado
+- **Productos subidos** al catálogo
+- **Tienda personalizada** (logo, colores, descripción)
 
 ## Proceso de conexión
 
@@ -74,9 +54,9 @@ Meta requiere un **Business Manager** (también llamado portafolio comercial) pa
 
 - Si ya tienes uno, selecciónalo de la lista
 - Si no tienes, créalo durante el proceso ingresando:
-  - Nombre del negocio (debe coincidir con tu fanpage)
-  - Dirección (debe coincidir con tu fanpage)
-  - URL de tu fanpage de Facebook o sitio web
+  - Nombre del negocio
+  - Dirección
+  - URL de tu catálogo de Skytienda o sitio web
 
 ### 4. Configurar cuenta de Whatsapp Business (WABA)
 
@@ -113,8 +93,8 @@ El **nombre mostrado** (display name) es lo que verán tus clientes cuando les e
 
 - Representar claramente tu negocio, producto, servicio o departamento
 - Tener **mínimo 3 caracteres**
-- Coincidir **exactamente** con cómo aparece tu marca en tu sitio web o fanpage (incluyendo mayúsculas y espacios)
-- Tener relación clara con tu negocio (verificable en tu sitio web o fanpage)
+- Coincidir **exactamente** con cómo aparece tu marca en tu catálogo de Skytienda o sitio web (incluyendo mayúsculas y espacios)
+- Tener relación clara con tu negocio (verificable en tu catálogo de Skytienda o sitio web)
 
 ### El nombre NO puede:
 
@@ -130,7 +110,7 @@ El **nombre mostrado** (display name) es lo que verán tus clientes cuando les e
 
 ### Ejemplos
 
-| ❌ Incorrecto | ✅ Correcto |
+| Incorrecto | Correcto |
 |--------------|-------------|
 | SUNNY'S CLOTHING | Sunny's Clothing |
 | Tienda Oficial | Mi Tienda ABC |
@@ -138,27 +118,20 @@ El **nombre mostrado** (display name) es lo que verán tus clientes cuando les e
 | Fashion NYC | NYC Fashion House |
 | Juan Pérez | Ferretería Pérez |
 
-### Requisito de sitio web o fanpage
+### Requisito de presencia web
 
 El nombre **no puede ser aprobado sin una presencia web verificable**. Meta revisará que el nombre coincida con:
-- Tu sitio web (con HTTPS), o
-- Tu fanpage de Facebook
-
-### Para agencias o distribuidores
-
-Si representas a otra empresa, la relación debe ser evidente en **ambos sitios web** (el tuyo y el de la empresa que representas).
-
-→ [Política de comercio de Whatsapp](https://www.whatsapp.com/legal/commerce-policy/)
-→ [Política de negocio de Whatsapp](https://www.whatsapp.com/legal/business-policy/)
+- Tu catálogo de Skytienda, o
+- Tu sitio web (con HTTPS)
 
 ## Cuándo se muestra el nombre en lugar del número
 
 Para que tus clientes vean tu **nombre** en lugar del número de teléfono, necesitas:
 
-1. ✅ Nombre mostrado en estado **"Aprobado"**
-2. ✅ Negocio **verificado** en Meta Business Manager
-3. ✅ Historial activo de mensajes enviados
-4. ✅ Mantener **alta calidad** en tu cuenta (sin reportes de spam)
+1. Nombre mostrado en estado **"Aprobado"**
+2. Negocio [**verificado** en Meta Business Manager](https://es-la.facebook.com/business/help/2058515294227817)
+3. Historial activo de mensajes enviados
+4. Mantener **alta calidad** en tu cuenta (sin reportes de spam)
 
 ## Estados de conexión
 
@@ -187,7 +160,7 @@ Si el número está registrado en Whatsapp personal o Business:
 1. Abre Whatsapp en el teléfono donde está registrado
 2. Ve a **Configuración → Cuenta → Eliminar cuenta**
 3. Confirma la eliminación
-4. Espera **5-10 minutos**
+4. Espera al menos **5 minutos**
 5. Intenta de nuevo en Skytienda
 
 ### "No recibo el código de verificación"
@@ -195,50 +168,44 @@ Si el número está registrado en Whatsapp personal o Business:
 - Verifica que el número puede recibir SMS internacionales
 - Intenta con **verificación por llamada** en lugar de SMS
 - Asegúrate de que el número no esté bloqueando mensajes de números desconocidos
-- Si usas línea fija, solo puedes verificar por llamada
 
 ### "Nombre mostrado rechazado"
 
 Meta puede rechazar el nombre si:
 
-- No coincide con tu presencia en línea (fanpage, sitio web)
+- No coincide con tu presencia en línea (catálogo de Skytienda, sitio web)
 - Parece genérico o spam
 - Usa solo mayúsculas
 - Contiene caracteres especiales o emojis
 - Viola las políticas de nombres
 
-**Solución:** Usa exactamente el mismo nombre que aparece en tu fanpage de Facebook, respetando mayúsculas y espacios.
+**Solución:** Usa exactamente el mismo nombre que configuraste en tu tienda de Skytienda, respetando mayúsculas y espacios.
 
 ### "Business Manager rechazado"
 
 Meta puede rechazar la creación del Business Manager si:
 
 - El nombre del negocio no es claro o parece spam
-- La URL del sitio web o fanpage no funciona
+- La URL del sitio web o catálogo no funciona
 - La información proporcionada no coincide entre fuentes
-- La cuenta de Facebook es muy nueva (menos de 1 mes)
 
-**Solución:** Verifica que toda la información sea coherente entre tu fanpage, sitio web y registro.
+**Solución:** Verifica que toda la información sea coherente entre tu catálogo de Skytienda, sitio web y registro.
 
 ### "Error de conexión"
 
 Si el proceso falla sin mensaje específico:
 
 1. Cierra la ventana y vuelve a intentar
-2. Asegúrate de usar un navegador actualizado (Chrome recomendado)
-3. Desactiva extensiones que puedan bloquear popups
+2. Asegúrate de usar un navegador actualizado
+3. Desactiva extensiones que puedan bloquear popups o bloqueadores de anuncios
 4. Contacta a soporte si el problema persiste
+
+## Desconectar tu número
+
+Si necesitas desvincular tu número de Skytienda, consulta la guía de [desconexión de Whatsapp](/empezar/conectar-whatsapp/desconectar-whatsapp). Ten en cuenta que al desconectar un número de la Cloud API se pierde el nombre mostrado, historial y plantillas.
 
 ## Recursos oficiales de Meta
 
 - [WhatsApp Cloud API - Documentación](https://developers.facebook.com/docs/whatsapp/cloud-api/get-started) - Guía oficial de inicio
 - [Números de teléfono - Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/phone-numbers) - Requisitos de números
-- [WhatsApp Developer Hub](https://business.whatsapp.com/developers/developer-hub) - Portal de desarrolladores
-- [Política de comercio](https://www.whatsapp.com/legal/commerce-policy/) - Reglas para vender
-- [Política de negocio](https://www.whatsapp.com/legal/business-policy/) - Uso aceptable de la plataforma
-
-## Siguiente paso
-
-Con Whatsapp conectado, ahora debes agregar productos para que Celestino pueda mostrarlos a tus clientes.
-
-→ [Agregar productos](/empezar/agregar-productos)
+- [Política de comercio y negocio](https://business.whatsapp.com/policy) - Reglas para vender y uso aceptable

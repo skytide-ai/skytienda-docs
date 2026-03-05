@@ -1,0 +1,136 @@
+---
+title: Whatsapp Business existente
+description: Conecta tu número de Whatsapp Business actual a Skytienda usando el modo coexistencia
+---
+
+Si ya tienes un número activo en la app de **Whatsapp Business**, puedes conectarlo a Skytienda **sin eliminar la app**. Gracias al modo coexistencia de Meta, tu número funcionará en ambos lugares al mismo tiempo.
+
+<Callout type="info">
+  Con la coexistencia, **Celestino atiende los mensajes automáticamente**. Si respondes desde la app de Whatsapp Business, Celestino se pausa por 30 minutos para que no respondan ambos al mismo tiempo.
+</Callout>
+
+## Antes de conectar
+
+### Lo que debes saber
+
+- **No necesitas eliminar la app.** Tu número sigue funcionando en Whatsapp Business mientras Celestino atiende automáticamente.
+- **Los contactos se mantienen.** Tus clientes siguen escribiendo al mismo número de siempre.
+- **El nombre mostrado se conserva** si ya fue aprobado por Meta.
+- **Algunas funciones de la app se restringen** (ver limitaciones abajo).
+
+### Requisitos
+
+- Tu número debe estar activo en la app de **Whatsapp Business** (no Whatsapp personal) por al menos **7 días**
+- App de Whatsapp Business versión **2.24.17 o superior**
+- Una cuenta de Facebook activa
+- Meta Business Manager (portafolio comercial) activo
+
+<Callout type="warning">
+  Las cuentas nuevas de Whatsapp Business **no son elegibles de inmediato**. La coexistencia está diseñada para negocios que ya usan activamente la app. La elegibilidad depende del tiempo de uso y la calidad de los mensajes. Recomendamos usar Whatsapp Business por un tiempo antes de intentar conectar.
+</Callout>
+
+## Proceso de conexión
+
+### 1. Iniciar el proceso
+
+1. Ve a **Configuración → Whatsapp** en tu panel de Skytienda
+2. Haz clic en **Conectar Whatsapp**
+3. Se abrirá la ventana de Meta (embedded signup) para iniciar sesión con Facebook
+
+### 2. Autenticar y vincular
+
+1. Inicia sesión con tu cuenta de Facebook
+2. Selecciona o crea tu **Business Manager**
+3. Cuando el sistema detecte que tu número ya está en Whatsapp Business, te ofrecerá la opción de **conectarlo en modo coexistencia**
+4. Acepta los términos de servicio
+
+### 3. Vincular con código QR
+
+1. Se mostrará un **código QR** en pantalla
+2. Recibirás una notificación en la app de Whatsapp Business para escanearlo
+3. Escanea el código desde la app para vincular tu número
+
+### 4. Confirmar la conexión
+
+Una vez completado:
+1. El estado en Skytienda cambiará a **"Conectado"**
+2. Pide a alguien que envíe un mensaje de prueba a tu número
+3. Verifica que Celestino responda correctamente
+4. Comprueba que también puedes ver el mensaje en la app de Whatsapp Business
+
+## Funciones que cambian con la coexistencia
+
+Al activar la coexistencia, algunas funciones de la app de Whatsapp Business se restringen o cambian:
+
+| Función | ¿Qué pasa con la coexistencia? |
+|---------|-------------------------------|
+| **Chats 1:1** | Sincronizados entre la app y Skytienda |
+| **Edición o eliminación de mensajes** | Deshabilitada en chats 1:1 |
+| **Mensajes temporales y de visualización única** | Deshabilitados |
+| **Ubicación en tiempo real** | No disponible |
+| **Listas de difusión** | Las existentes quedan en solo lectura y no se pueden crear nuevas — los envíos masivos se hacen desde Skytienda con campañas de marketing y plantillas aprobadas por Meta |
+| **Llamadas de voz o video** | Siguen funcionando en la app, pero no se integran con Skytienda |
+| **Catálogo de Whatsapp, estados y herramientas de negocio** | Se gestionan desde la app. Este catálogo es el nativo de Meta, independiente del [catálogo de Skytienda](/empezar/catalogo-web) donde Celestino muestra tus productos |
+| **Grupos** | Siguen funcionando en la app, pero no se gestionan desde Skytienda |
+
+<Callout type="info">
+  Los mensajes enviados desde la app de Whatsapp Business son **gratuitos**. Solo se cobran los mensajes iniciados por Celestino, según las tarifas de Meta por categoría (marketing, utilidad, autenticación).
+</Callout>
+
+## Chulito azul (verificación)
+
+Si tu cuenta tiene el chulito azul de verificación, ten en cuenta lo siguiente:
+
+- **Meta Verified** (suscripción paga): **se conserva**, pero puede **desaparecer temporalmente** durante la activación y tardar unos días en volver a mostrarse.
+- **Official Business Account (OBA)** (verificación gratuita para marcas notables): **no se transfiere** a Skytienda con la coexistencia. El chulito seguirá visible en la app, pero no en el lado de la API.
+
+<Callout type="warning">
+  Si en algún momento decides desconectar la coexistencia y reconectar usando el método de **número nuevo** (eliminando la app primero), el chulito azul de Meta Verified **se perderá**. La coexistencia es el único método que lo preserva.
+</Callout>
+
+<Callout type="info">
+  Si no tienes el chulito azul actualmente, esto no te afecta. Puedes activar la coexistencia sin preocuparte por este tema.
+</Callout>
+
+## Advertencias importantes
+
+<Callout type="warning">
+  **Whatsapp para Windows no es compatible.** Los mensajes que envíes desde la app de Whatsapp para Windows no llegan a Skytienda (Meta no los sincroniza). Usa la app móvil, Whatsapp Web o la app de macOS para que los mensajes se sincronicen correctamente.
+</Callout>
+
+<Callout type="warning">
+  **Historial de mensajes.** Aunque Meta permite sincronizar el historial de chats recientes al activar la coexistencia, **Skytienda aún no soporta la importación de mensajes anteriores**. Solo los mensajes nuevos recibidos después de la conexión serán visibles en Skytienda. La sincronización de mensajes nuevos entre la app y Skytienda es en tiempo real.
+</Callout>
+
+<Callout type="warning">
+  **Dispositivos vinculados.** Al activar la coexistencia, todos tus dispositivos vinculados (Whatsapp Web, escritorio) se desconectan automáticamente. Espera hasta **24 horas** antes de volver a vincularlos para que la sincronización se complete.
+</Callout>
+
+<Callout type="warning">
+  **Regla de inactividad.** Si la app móvil de Whatsapp Business permanece inactiva durante aproximadamente 2 semanas, Meta puede desactivar la coexistencia automáticamente. Abre la app con regularidad para evitarlo.
+</Callout>
+
+## Desconectar la coexistencia
+
+Si necesitas desvincular tu número de Skytienda, puedes hacerlo desde la app de Whatsapp Business sin perder tus chats ni contactos. Consulta la guía completa en [desconectar Whatsapp](/empezar/conectar-whatsapp/desconectar-whatsapp).
+
+## Solución de problemas
+
+### "Mi número no es elegible para coexistencia"
+
+- Verifica que tu número lleva **al menos 7 días activo** en la app de Whatsapp Business
+- Actualiza la app de Whatsapp Business a la versión **2.24.17 o superior**
+
+### "No veo la opción de coexistencia"
+
+- Asegúrate de estar usando la app de **Whatsapp Business**, no Whatsapp personal
+- Verifica que tu cuenta de Facebook tiene un **Business Manager** activo
+- Intenta cerrar y volver a abrir la ventana de conexión
+
+### "Los mensajes no se sincronizan"
+
+- La sincronización inicial puede tardar hasta **6 horas** — espera antes de reportar el problema
+- Después de la sincronización inicial, los mensajes nuevos deben aparecer en tiempo real
+- Verifica que tienes conexión a internet estable en el teléfono
+- Cierra y reabre la app de Whatsapp Business
+- Si el problema persiste después de 6 horas, contacta a soporte

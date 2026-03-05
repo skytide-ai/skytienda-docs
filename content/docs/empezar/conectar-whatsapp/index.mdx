@@ -1,0 +1,55 @@
+---
+title: Conectar Whatsapp
+description: Elige cómo conectar Whatsapp a Skytienda según tu situación actual
+---
+
+<Callout type="warning">
+  Este es el paso más crítico de la configuración. Sin Whatsapp conectado, Celestino no puede recibir ni responder mensajes de clientes.
+</Callout>
+
+Skytienda ofrece dos formas de conectar Whatsapp. Elige la que se adapte a tu situación:
+
+## Opciones de conexión
+
+<Cards>
+  <Card title="Número nuevo o sin Whatsapp" href="/empezar/conectar-whatsapp/whatsapp-api">
+    Conecta un número que no esté registrado en ninguna versión de Whatsapp. Se registra directamente en la Cloud API de Meta.
+  </Card>
+  <Card title="Whatsapp Business existente" href="/empezar/conectar-whatsapp/whatsapp-business-existente">
+    Ya tienes un número activo en la app de Whatsapp Business y quieres conectarlo a Skytienda sin perder acceso a la app.
+  </Card>
+</Cards>
+
+## Diferencias entre las dos opciones
+
+| | Número nuevo (Cloud API) | Whatsapp Business existente (coexistencia) |
+|---|---|---|
+| **Número requerido** | Uno que **no** esté en Whatsapp | Uno que **ya** esté activo en la app de Whatsapp Business (mínimo 7 días) |
+| **App de Whatsapp** | No podrás usar la app con ese número | **Sigues usando la app** junto con Skytienda |
+| **Contactos existentes** | No aplica (número nuevo) | Tus contactos se mantienen y pueden seguir escribiéndote |
+| **Proceso** | Embedded signup — puedes registrar un número nuevo o usar uno existente que no esté vinculado a Whatsapp | Embedded signup — conecta tu número activo de Whatsapp Business sin eliminarlo |
+| **Desde la app de Whatsapp Business** | No disponible | Puedes seguir respondiendo desde la app (gratis) |
+| **Historial de mensajes anteriores** | No aplica | Skytienda no importa mensajes anteriores, solo los nuevos |
+
+## ¿Qué es la coexistencia?
+
+Desde 2025, Meta permite que un mismo número funcione **simultáneamente** en la app de Whatsapp Business y en Skytienda. Esto significa que:
+
+- **Celestino** atiende los mensajes de tus clientes automáticamente
+- **Tú** puedes responder desde la app de Whatsapp Business cuando lo necesites — al hacerlo, Celestino se pausa automáticamente por 30 minutos para que no respondan ambos al mismo tiempo
+- Los mensajes se **sincronizan en tiempo real** entre ambos canales
+
+### Funciones que cambian con la coexistencia
+
+Al activar la coexistencia, algunas funciones de la app se restringen o cambian:
+
+| Función | ¿Qué pasa con la coexistencia? |
+|---------|-------------------------------|
+| Chats 1:1 | Sincronizados entre la app y Skytienda |
+| Edición o eliminación de mensajes | Deshabilitada en chats 1:1 |
+| Mensajes temporales y de visualización única | Deshabilitados |
+| Ubicación en tiempo real | No disponible |
+| Listas de difusión | Las existentes quedan en solo lectura y no se pueden crear nuevas — los envíos masivos se hacen desde Skytienda con campañas de marketing y plantillas aprobadas por Meta |
+| Llamadas de voz o video | Siguen funcionando en la app, pero no se integran con Skytienda |
+| Catálogo de Whatsapp, estados y herramientas de negocio | Se gestionan desde la app. Este catálogo es el nativo de Meta, independiente del [catálogo de Skytienda](/empezar/catalogo-web) donde Celestino muestra tus productos |
+| Grupos | Siguen funcionando en la app, pero no se gestionan desde Skytienda |

@@ -1,0 +1,9 @@
+{
+  "title": "Conectar Whatsapp",
+  "pages": [
+    "index",
+    "whatsapp-api",
+    "whatsapp-business-existente",
+    "desconectar-whatsapp"
+  ]
+}
