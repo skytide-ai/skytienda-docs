@@ -5,17 +5,21 @@ description: Configura los métodos de pago que aceptarás en tu tienda
 
 Configura cómo tus clientes pueden pagarte. Puedes tener hasta **5 métodos de pago** activos.
 
+<Callout>
+  Si ya tenías métodos configurados, no se pierden ni cambian. Siguen funcionando igual.
+</Callout>
+
 ## Acceder a la configuración
 
 1. Ve a **Configuración → Pagos**
-2. Haz clic en **Agregar método**
-3. Selecciona el método que quieres configurar
+2. Haz clic en **Agregar método de pago**
+3. Selecciona el tipo de método que quieres configurar
 
-## Métodos disponibles
+## Tipos de método de pago
 
-### Pago con Wompi
+### Pago con tarjeta (Wompi)
 
-Acepta los métodos de pago que tengas configurados en tu cuenta de Wompi (tarjetas, PSE, Nequi, Bancolombia, etc.).
+Acepta pagos con tarjeta y otros métodos que tengas configurados en tu cuenta de Wompi.
 
 <Callout type="warning">
   Wompi requiere configuración previa. Ve a **Configuración → Integraciones → Wompi** para conectar tu cuenta.
@@ -30,6 +34,8 @@ Si el pago es exitoso, la orden pasa automáticamente a **confirmada** y el pago
 
 ### Transferencia bancaria
 
+Se agrega directamente con tus datos bancarios.
+
 **Campos requeridos:**
 - Banco
 - Tipo de cuenta (ahorros o corriente)
@@ -41,80 +47,38 @@ Si el pago es exitoso, la orden pasa automáticamente a **confirmada** y el pago
 
 ---
 
-### Nequi
+### Billetera digital
 
-Billetera digital de Bancolombia.
+Agrega cualquier billetera digital: Nequi, Daviplata, Yape o cualquier otra billetera disponible en tu país.
 
-**Campo requerido:**
-- Número de celular
-
-**Flujo del agente:**
-> El agente compartirá tu número Nequi y solicitará una foto del comprobante. Recibirás una notificación para verificar el pago y confirmar la orden.
-
----
-
-### Daviplata
-
-Billetera digital de Davivienda.
-
-**Campo requerido:**
-- Número de celular
+**Cómo agregar:**
+1. Haz clic en **Agregar método de pago**
+2. Selecciona **Billetera digital**
+3. Escribe el nombre del servicio (ej: "Nequi", "Daviplata", "Yape")
+4. Ingresa la cuenta o número de pago donde recibes pagos
 
 **Flujo del agente:**
-> El agente compartirá tu número Daviplata y solicitará una foto del comprobante. Recibirás una notificación para verificar el pago y confirmar la orden.
+> El agente compartirá el nombre de la billetera y tu cuenta o número de pago, y solicitará una foto del comprobante. Recibirás una notificación para verificar el pago y confirmar la orden.
 
 ---
 
-### Dale!
+### Crédito digital (BNPL)
 
-Plataforma de pagos del Grupo Aval.
+Agrega cualquier proveedor de crédito digital o compra ahora y paga después: ADDI, Sistecredito o cualquier otro proveedor disponible en tu país.
 
-**Campo requerido:**
-- Número de celular
+**Cómo agregar:**
+1. Haz clic en **Agregar método de pago**
+2. Selecciona **Crédito digital**
+3. Escribe el nombre del servicio (ej: "ADDI", "Sistecredito")
 
 **Flujo del agente:**
-> El agente compartirá tu número Dale! y solicitará una foto del comprobante. Recibirás una notificación para verificar el pago y confirmar la orden.
+> El agente solicitará la cédula del cliente para verificar. Recibirás una notificación con la cédula para validar el crédito en el portal del proveedor. Cuando te notifiquen que el pago fue exitoso, marca la orden como confirmada.
 
 ---
 
-### Bre-B
-
-Sistema de pagos del Banco de la República.
-
-**Campo requerido:**
-- Llave Bre-B (puede ser tu número de celular, correo, documento o código alfanumérico)
-
-**Flujo del agente:**
-> El agente compartirá tu llave Bre-B y solicitará una foto del comprobante. Recibirás una notificación para verificar el pago y confirmar la orden.
-
----
-
-### ADDI
-
-Crédito digital - Compra ahora, paga después.
-
-**No requiere configuración de datos.**
-
-**Flujo del agente:**
-> El agente solicitará la cédula del cliente. Recibirás una notificación con la cédula para verificar el crédito en el portal de ADDI. Cuando ADDI te notifique que el pago fue exitoso, marca la orden como confirmada.
-
----
-
-### Sistecredito
-
-Crédito digital - Pago en cuotas.
-
-**No requiere configuración de datos.**
-
-El flujo es igual que ADDI: el agente pide la cédula y tú verificas en el portal de Sistecredito.
-
----
-
-### Contraentrega
+### Pago contra entrega
 
 El cliente paga al recibir el producto.
-
-**No requiere configuración de datos.**
 
 **Recargo (opcional):**
 
